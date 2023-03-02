@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Lab3</title>
+</head>
+<body>
+    <form>
+        <table border="1" align="center" width="70%">
+            <thead>
+                <tr align="center">
+                    <th colspan="2"><h1>Набір на альфа тестування <u>AI Survival!</u></h1></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td width="40%">Ваш телеграм для зв'язку:</td>
+                    <td><input type="text" placeholder="@mximkh" required /></td>
+                </tr>
+                <tr>
+                    <td width="40%">Наскільки Ви заціквлені у розвитку проекта?</td>
+                    <td>
+                        <input type="radio" name="interest" required>5 - Дуже зацікавлений у подальшому розвитку<br>
+                        <input type="radio" name="interest" required>4 - Зацікавлений<br>
+                        <input type="radio" name="interest" required>3 - Просто є інтерес до проекту<br>
+                        <input type="radio" name="interest" required>2 - Майже не зацікавлений<br>
+                        <input type="radio" name="interest" required>1 - Не зацікавлений, просто хочу пограти<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="40%">Кількість часу, яку ви готові приділити проекту <b>на день</b>:</td>
+                    <td>
+                        <select required>
+                            <option>менше 30хв</option>
+                            <option>30-60хв</option>
+                            <option>60-90хв</option>
+                            <option>90-120хв</option>
+                            <option>більше 120хв</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="40%">Яка у тебе ціль тестування? </td>
+                    <td>
+                        <input type="checkbox" name="goal" required> Допомогти тестувати<br>
+                        <input type="checkbox" name="goal" required> Хочу зробити цей проект кращим<br>
+                        <input type="checkbox" name="goal" required> Спробувати цікаві механіки<br>
+                        <input type="checkbox" name="goal" required> Люблю знаходитити баги<br>
+                        <input type="checkbox" name="goal" required> Спробувати себе у новій ролі<br>
+                        <input type="checkbox" name="goal" required> Просто пограти<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="40%">Твої очікування від проекту:</td>
+                    <td>
+                        <textarea placeholder="Хочу розвивати ідею проекту та весело проводити час у грі"></textarea>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">
+                        <input type="reset" value="Очистити форму">
+                        <br>
+                        <br>
+                        <input type="submit" value="Відправити форму">
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+</html>
