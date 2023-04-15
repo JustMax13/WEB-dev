@@ -22,7 +22,7 @@
 }
 .default-text {
     font-size: 14px;
-    color: #999999;
+    color: #423D19;
 }
 .default-text-style {
     font-family: 'Century Schoolbook';
@@ -50,9 +50,10 @@
     height: 2em;
 }
 .select-menu-button {
-    background-color: #29728F;
+    background-color: #12FFA4;
     border-radius: 1em;
-    color: #FFFFFF;
+    color: #222222;
+    font-weight: 700;
 }
 .social-network {
     width: 1.5vw;
@@ -100,19 +101,19 @@
     right: 1em;
 }
 #decoration-line {
-    background-color: #3F43DB;
+    background-color: #10EB97;
     border-radius: 1em;
     width: 5vw;
     height: 1vh;
 }
 #decoration-line-inside {
-    background-color: #F0D718;
+    background-color: #EBD509;
     border-radius: 1em;
     width: 2vw;
     height: 1vh;
 }
 #download-cv {
-    background-color: #29728F;
+    background-color: #279C61;
     border-radius: 3vw;
     color: #FFFFFF;
     position: relative;
@@ -127,12 +128,12 @@
 }
 #short-info {
     height: 100%;
-    background-color: #E6E04C;
+    background-color: #FAE100;
     border-radius: 2vw;
     position: static;
 }
 #main {
-    background-color: #FBF89E;
+    background-color: #FFFFAA;
     border-radius: 2vw;
     display: grid;
     grid-template-columns: 0.25fr 0.75fr;
@@ -171,9 +172,10 @@
     left: 20%;
     right: 20%;
     width: 60%;
-    height: 3vh;    
+    height: 3vh;
     font-size: 0.8em;
     position: relative;
-    background-color: #D4CF46;
+    background-color: #DCC001;
     border-radius: 1vw;
+    padding-top: 1vh;
 }
