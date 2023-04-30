@@ -2,10 +2,8 @@
     background-color: #FFFCE2;
 }
 .block {
-    display: grid;
     border: 0.1em solid #E6CFA1;
     border-radius: 2.5em;
-    grid-template-columns: 1fr
 }
 .in-block-img{
     padding-top: 0.3em;
@@ -91,13 +89,9 @@
     border-radius: 3vw;
 }
 #blocks{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1em;
     text-align: center;
     height: 45vh;
     width: 50vw;
-
     right: 1em;
 }
 #decoration-line {
@@ -118,7 +112,6 @@
     color: #FFFFFF;
     width: 70%;
     height: 5vh;
-    /*place-items: center;*/
 }
 #long-info {
     height: 100%;
@@ -132,17 +125,13 @@
     background-color: #FFFFAA;
     border-radius: 2vw;
     width: 70vw;
-    height: 98vh;
+    height: 100%;
 }
 #menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-column-gap: 2em;
+    padding-top: 2vh;
     text-align: center;
-    top: 3vh;
     right: 2vw;
-    width: 40em;
-    position: absolute;
+    width: 80%;
 }
 #name {
     margin-top: 2vh;
@@ -150,7 +139,7 @@
     color: #000000;
 }
 #short-content {
-    top: 15%;
+    top: 10%;
     position: relative;
     text-align: center;
 }
