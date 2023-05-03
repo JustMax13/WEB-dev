@@ -28,7 +28,7 @@ class Designer extends Employee {
         if (efficiencyСoefficient < 0) {
             this.efficiencyСoefficient = 0;
         } else if (efficiencyСoefficient > 1) {
-            this.efficiencyСoefficient = 0;
+            this.efficiencyСoefficient = 1;
         } else {
             this.efficiencyСoefficient = efficiencyСoefficient;
         }
