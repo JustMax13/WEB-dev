@@ -6,14 +6,19 @@ class Employee {
         this.secondName = secondName;
         this.baseSalary = baseSalary;
         this.experienceInYears = experienceInYears;
+    }
+    CalculateSalary() {
+        let countedSalary = 0;
 
         if (this.experienceInYears < 2) {
-            this.countedSalary = this.baseSalary;
+            countedSalary = this.baseSalary;
         } else if (this.experienceInYears < 5) {
-            this.countedSalary = this.baseSalary + 200;
+            countedSalary = this.baseSalary + 200;
         } else if (this.experienceInYears >= 5) {
-            this.countedSalary = this.baseSalary * 1.2 + 500;
+            countedSalary = this.baseSalary * 1.2 + 500;
         }
+
+        return countedSalary;
     }
 }
 class Developer extends Employee {
@@ -32,18 +37,22 @@ class Designer extends Employee {
         } else {
             this.efficiencyСoefficient = efficiencyСoefficient;
         }
-
-        this.countedSalary = this.countedSalary * this.efficiencyСoefficient;
+    }
+    CalculateSalary() {
+        return super.CalculateSalary() * this.efficiencyСoefficient;
     }
 }
 class Manager extends Employee {
     constructor(firstName, secondName, baseSalary, experienceInYears, employees) {
         super(firstName, secondName, baseSalary, experienceInYears);
         this.employees = employees;
+    }
+    CalculateSalary() {
+        let countedSalary = super.CalculateSalary();
         if (this.employees.length > 10) {
-            this.countedSalary += 300;
+            countedSalary += 300;
         } else if (this.employees.length > 5) {
-            this.countedSalary += 200;
+            countedSalary += 200;
         }
 
         let counter = 0;
@@ -55,8 +64,10 @@ class Manager extends Employee {
         let coefficient = counter / this.employees.length;
 
         if (coefficient > 0.5) {
-            this.countedSalary += this.countedSalary * 0.1;
+            countedSalary += countedSalary * 0.1;
         }
+
+        return countedSalary;
     }
 }
 class Department {
@@ -76,7 +87,7 @@ class Department {
         }
     }
     logEmployeeInfo(employee) {
-        console.log(employee.firstName + " " + employee.secondName + " отримав " + employee.countedSalary +
+        console.log(employee.firstName + " " + employee.secondName + " отримав " + employee.CalculateSalary() +
             " лимонів з АТБ у якості заробітньої плати\n");
     }
 }
